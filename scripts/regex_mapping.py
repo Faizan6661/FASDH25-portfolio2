@@ -13,7 +13,7 @@ coordinates = pd.read_csv(gazetteer_path, sep="\t")
 counts_path = "regex_counts.tsv"
 counts = pd.read_csv(counts_path, sep="\t")
 
-# Ensure both DataFrames use the same column name for merging
+# Ensure both DataFrames use the same column name for merging # taken from deepseek ai check conversation 3
 # Rename 'placename' to 'asciiname' to match the gazetteer file
 counts.rename(columns={"placename": "asciiname"}, inplace=True)
 
@@ -34,7 +34,7 @@ fig = px.scatter_map(            # switched to scatter_mapbox for correct functi
     color_continuous_scale=px.colors.sequential.YlOrRd
 )
 
-# use a different background map, without labels:  #slide 33 
+# use a different background map, without labels:  #slide 33 10.1
 fig.update_layout(map_style="carto-positron-nolabels", map=dict(style="dark"))
 
 # display the interactive map in the browser:

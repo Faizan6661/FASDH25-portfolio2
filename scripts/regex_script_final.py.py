@@ -27,7 +27,7 @@ rows = data.split("\n")
 
 # Loop through all rows of the gazetteer, skipping the header
 for row in rows[1:]:
-    # Split each row into columns using tab as separator
+    # Split each row into columns using tab as separator #
     columns = row.split("\t")
 
     # Get the main place name (asciiname)
@@ -62,7 +62,7 @@ for filename in os.listdir(folder):  # loop through all the files in the folder
     # build the file path
     file_path = os.path.join(folder, filename)
 
-    # Skip files before 2023-10-07
+    # Skip files before 2023-10-07 # from Deepseek AI see conversation 2
     if filename[:10] < "2023-10-07":  # goes through the first 10 characters in filename which represent YYYY-MM-DD
         continue
 
