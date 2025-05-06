@@ -19,13 +19,6 @@ rows = data.split("\n")
 
 # improve and recall of place names by using more columns for gazetteer
 
-# open the gazetteer tsv file
-# skip the header row
-
-# for each row collect the asciiname and all possible alternative name
-
-# fix this function!
-
 # build a dictionary of patterns from the place names in the first column and the alternative name column
 # Create an empty dictionary to store place name patterns and their frequencies
 patterns = {}
