@@ -8,6 +8,8 @@ gazetteer = pd.read_csv("NER_gazetteer.tsv", sep="\t")
 # Standardize column name for merging
 gazetteer.rename(columns={"Name": "name"}, inplace=True)
 
+
+#see conversation 4 in AI documentation
 # Merge both datasets
 merged_df = pd.merge(ner_counts, gazetteer, on="name")
 
